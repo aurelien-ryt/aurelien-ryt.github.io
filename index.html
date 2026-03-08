@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio – Aurélien ROYANT</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- ═══════════ NAV ═══════════ -->
+  <nav id="navbar">
+    <div class="nav-logo">Aurélien <span>ROYANT</span></div>
+
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about"      data-i18n="nav-about">À propos</a></li>
+      <li><a href="#skills"     data-i18n="nav-skills">Compétences</a></li>
+      <li><a href="#projects"   data-i18n="nav-projects">Projets</a></li>
+      <li><a href="#experience" data-i18n="nav-exp">Expérience</a></li>
+      <li><a href="#education"  data-i18n="nav-edu">Formation</a></li>
+    </ul>
+
+    <div class="nav-right">
+      <button class="lang-btn" id="langBtn">EN</button>
+      <button class="hamburger" id="hamburger" aria-label="Menu">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- ═══════════ HERO ═══════════ -->
+  <section id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <span class="hero-badge" data-i18n="hero-badge">BTS SIO · Option SLAM</span>
+      <h1>Aurélien <span>ROYANT</span></h1>
+      <p class="hero-sub" data-i18n="hero-sub">Étudiant en développement logiciel &amp; applications métier</p>
+      <div class="hero-btns">
+        <a href="#projects" class="btn btn-primary" data-i18n="btn-projects">Voir mes projets</a>
+        <a href="#about"    class="btn btn-ghost"   data-i18n="btn-about">En savoir plus</a>
+      </div>
+    </div>
+    <div class="hero-scroll">
+      <div class="scroll-dot"></div>
+    </div>
+  </section>
+
+  <!-- ═══════════ ABOUT ═══════════ -->
+  <section id="about">
+    <div class="section-header reveal">
+      <p class="section-label" data-i18n="lbl-about">Qui suis-je</p>
+      <h2 class="section-title" data-i18n="ttl-about">À <span>propos</span></h2>
+      <div class="sep"></div>
+    </div>
+
+    <div class="about-grid">
+      <div class="photo-wrap reveal">
+        <div class="photo-placeholder">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+               stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round">
+            <circle cx="12" cy="8" r="4"/>
+            <path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/>
+          </svg>
+          <p class="photo-hint" data-i18n="photo-hint">Photo</p>
+        </div>
+      </div>
+
+      <div class="about-right">
+        <p class="reveal" data-i18n="about-p1">
+          Étudiant en BTS Services Informatiques aux Organisations, option SLAM
+          (Solutions Logicielles et Applications Métiers), actuellement en 2ème année.
+          Passionné par le développement d'applications web et mobiles, j'aime relever
+          des défis techniques et explorer de nouvelles technologies.
+        </p>
+        <p class="reveal" data-i18n="about-p2">
+          Mon parcours m'a permis de développer des compétences solides en développement
+          full-stack, conception d'APIs REST et développement Android, à travers des
+          projets concrets et des expériences en entreprise.
+        </p>
+
+        <div class="info-cards reveal">
+          <div class="info-card">
+            <span class="ic">🎓</span>
+            <div>
+              <small data-i18n="ic-training">Formation</small>
+              <strong>BTS SIO – SLAM</strong>
+            </div>
+          </div>
+          <div class="info-card">
+            <span class="ic">📍</span>
+            <div>
+              <small data-i18n="ic-city">Localisation</small>
+              <strong>Lyon, France</strong>
+            </div>
+          </div>
+          <div class="info-card">
+            <span class="ic">📅</span>
+            <div>
+              <small data-i18n="ic-year">Année</small>
+              <strong data-i18n="ic-year-val">2ème année</strong>
+            </div>
+          </div>
+          <div class="info-card">
+            <span class="ic">💻</span>
+            <div>
+              <small data-i18n="ic-spec">Spécialité</small>
+              <strong data-i18n="ic-spec-val">Développement logiciel</strong>
+            </div>
+          </div>
+          <div class="info-card">
+            <span class="ic">📧</span>
+            <div>
+              <small data-i18n="ic-email">Email</small>
+              <strong>aurelien.ryt@gmail.com</strong>
+            </div>
+          </div>
+          <div class="info-card">
+            <span class="ic">🎂</span>
+            <div>
+              <small data-i18n="ic-age">Âge</small>
+              <strong data-i18n="ic-age-val">19 ans</strong>
+            </div>
+          </div>
+          <div class="info-card">
+            <span class="ic">🚗</span>
+            <div>
+              <small data-i18n="ic-permis">Permis</small>
+              <strong data-i18n="ic-permis-val">Permis B</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ SKILLS ═══════════ -->
+  <section id="skills">
+    <div class="section-header reveal">
+      <p class="section-label" data-i18n="lbl-skills">Ce que je maîtrise</p>
+      <h2 class="section-title" data-i18n="ttl-skills">Mes <span>compétences</span></h2>
+      <div class="sep"></div>
+    </div>
+
+    <div class="skills-wrap">
+      <div class="skill-group reveal">
+        <h3 data-i18n="sk-langs">Langages</h3>
+        <div class="badges">
+          <div class="badge"><i class="devicon-php-plain colored"></i><span>PHP</span></div>
+          <div class="badge"><i class="devicon-java-plain colored"></i><span>Java</span></div>
+          <div class="badge"><i class="devicon-kotlin-plain colored"></i><span>Kotlin</span></div>
+          <div class="badge"><i class="devicon-html5-plain colored"></i><span>HTML</span></div>
+          <div class="badge"><i class="devicon-css3-plain colored"></i><span>CSS</span></div>
+          <div class="badge"><i class="devicon-javascript-plain colored"></i><span>JavaScript</span></div>
+          <div class="badge"><i class="devicon-mysql-plain colored"></i><span>SQL</span></div>
+        </div>
+      </div>
+
+      <div class="skill-group reveal">
+        <h3 data-i18n="sk-tools">Frameworks &amp; Outils</h3>
+        <div class="badges">
+          <div class="badge"><i class="devicon-laravel-plain colored"></i><span>Laravel</span></div>
+          <div class="badge"><i class="devicon-spring-plain colored"></i><span>Spring Boot</span></div>
+          <div class="badge"><i class="devicon-android-plain colored"></i><span>Android</span></div>
+          <div class="badge"><i class="devicon-git-plain colored"></i><span>Git</span></div>
+          <div class="badge"><i class="devicon-github-original" style="color:#fff"></i><span>GitHub</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════ PROJECTS ═══════════ -->
+  <section id="projects">
+    <div class="section-header reveal">
+      <p class="section-label" data-i18n="lbl-projects">Mes réalisations</p>
+      <h2 class="section-title" data-i18n="ttl-projects">Mes <span>projets</span></h2>
+      <div class="sep"></div>
+    </div>
+
+    <div class="projects-grid">
+
+      <!-- VivaBio -->
+      <div class="project-card reveal"
+           data-github="github.com/aurelien-ryt/VivaBioApp">
+        <div class="pc-top">
+          <div class="pc-icon">🌿</div>
+          <svg class="gh-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57
+            0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695
+            -.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99
+            .105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225
+            -.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405
+            c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225
+            0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3
+            0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+          </svg>
+        </div>
+        <h3>VivaBio</h3>
+        <p data-i18n="vivabio-desc">
+          Application web de gestion de stock et de vente en ligne de produits biologiques.
+          Gestion des produits, des commandes clients et suivi des stocks en temps réel.
+        </p>
+        <div class="pc-tags">
+          <span>Laravel</span><span>PHP</span><span>MySQL</span><span>HTML / CSS</span>
+        </div>
+        <span class="pc-cta" data-i18n="see-project">Voir sur GitHub →</span>
+      </div>
+
+      <!-- Comeat -->
+      <div class="project-card reveal"
+           data-github="github.com/aurelien-ryt/Comeat">
+        <div class="pc-top">
+          <div class="pc-icon">🍽️</div>
+          <svg class="gh-icon" viewBox="0 0 24 24" fill="currentColor">
+            <path d="M12 0C5.37 0 0 5.37 0 12c0 5.31 3.435 9.795 8.205 11.385.6.105.825-.255.825-.57
+            0-.285-.015-1.23-.015-2.235-3.015.555-3.795-.735-4.035-1.41-.135-.345-.72-1.41-1.23-1.695
+            -.42-.225-1.02-.78-.015-.795.945-.015 1.62.87 1.845 1.23 1.08 1.815 2.805 1.305 3.495.99
+            .105-.78.42-1.305.765-1.605-2.67-.3-5.46-1.335-5.46-5.925 0-1.305.465-2.385 1.23-3.225
+            -.12-.3-.54-1.53.12-3.18 0 0 1.005-.315 3.3 1.23.96-.27 1.98-.405 3-.405s2.04.135 3 .405
+            c2.295-1.56 3.3-1.23 3.3-1.23.66 1.65.24 2.88.12 3.18.765.84 1.23 1.905 1.23 3.225
+            0 4.605-2.805 5.625-5.475 5.925.435.375.81 1.095.81 2.22 0 1.605-.015 2.895-.015 3.3
+            0 .315.225.69.825.57A12.02 12.02 0 0 0 24 12c0-6.63-5.37-12-12-12z"/>
+          </svg>
+        </div>
+        <h3>Comeat</h3>
+        <p data-i18n="comeat-desc">
+          Application Android native de gestion de réservation de repas.
+          Permet de consulter les menus et de réserver ses repas facilement depuis son smartphone.
+        </p>
+        <div class="pc-tags">
+          <span>Kotlin</span><span>Android</span><span>Android Studio</span>
+        </div>
+        <span class="pc-cta" data-i18n="see-project">Voir sur GitHub →</span>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════ EXPERIENCE ═══════════ -->
+  <section id="experience">
+    <div class="section-header reveal">
+      <p class="section-label" data-i18n="lbl-exp">Parcours professionnel</p>
+      <h2 class="section-title" data-i18n="ttl-exp">Mes <span>expériences</span></h2>
+      <div class="sep"></div>
+    </div>
+
+    <div class="timeline">
+
+      <!-- Stelogy -->
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+          <div class="tl-header">
+            <div>
+              <h3>Stelogy</h3>
+              <p class="tl-role" data-i18n="stelogy-role">Stagiaire Développeur</p>
+            </div>
+            <div class="tl-badges">
+              <span class="badge-period" data-i18n="stelogy-dates">5 Jan. – 13 Fév. 2026</span>
+              <span class="badge-type"   data-i18n="stelogy-type">Stage 2ème année</span>
+            </div>
+          </div>
+          <p data-i18n="stelogy-desc">
+            Développement et conception d'APIs REST au sein de l'équipe technique.
+            Conception d'APIs robustes et scalables dans un environnement professionnel.
+          </p>
+          <div class="tl-tags">
+            <span>Spring Boot</span><span>Java</span><span>REST API</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Orpi -->
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+          <div class="tl-header">
+            <div>
+              <h3>Orpi Cabinet Gallieni</h3>
+              <p class="tl-role" data-i18n="orpi-role">Stagiaire Développeur Web</p>
+            </div>
+            <div class="tl-badges">
+              <span class="badge-period" data-i18n="orpi-dates">26 Mai – 5 Juil. 2025</span>
+              <span class="badge-type"   data-i18n="orpi-type">Stage 1ère année</span>
+            </div>
+          </div>
+          <p data-i18n="orpi-desc">
+            Maintenance du site web de l'agence immobilière. Interventions techniques
+            pour assurer le bon fonctionnement et la mise à jour du site.
+          </p>
+          <div class="tl-tags">
+            <span>Web</span><span>Maintenance</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Ministère de l'Intérieur -->
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+          <div class="tl-header">
+            <div>
+              <h3 data-i18n="mi-org">Ministère de l'Intérieur</h3>
+              <p class="tl-role" data-i18n="mi-role">Stagiaire Assistant Technicien Support Informatique</p>
+            </div>
+            <div class="tl-badges">
+              <span class="badge-period" data-i18n="mi-dates">2023 – 2024</span>
+              <span class="badge-type"   data-i18n="mi-type">Stage</span>
+            </div>
+          </div>
+          <p data-i18n="mi-desc">
+            Aide et assistance aux employés de la structure. Participation aux opérations
+            de support informatique et manipulation de l'Active Directory dans le cadre
+            de la gestion des comptes et des accès.
+          </p>
+          <div class="tl-tags">
+            <span>Support IT</span><span>Active Directory</span><span>Windows</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- RATP -->
+      <div class="tl-item reveal">
+        <div class="tl-dot"></div>
+        <div class="tl-card">
+          <div class="tl-header">
+            <div>
+              <h3>RATP</h3>
+              <p class="tl-role" data-i18n="ratp-role">Stagiaire Technicien Maintenance Informatique</p>
+            </div>
+            <div class="tl-badges">
+              <span class="badge-period" data-i18n="ratp-dates">3 Jan. – 11 Fév. 2022</span>
+              <span class="badge-type"   data-i18n="ratp-type">Stage</span>
+            </div>
+          </div>
+          <p data-i18n="ratp-desc">
+            Entretien et réparation d'équipements informatiques. Participation à la
+            maintenance du parc informatique et intervention sur les pannes matérielles.
+          </p>
+          <div class="tl-tags">
+            <span>Maintenance</span><span>Hardware</span><span>Support IT</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════ EDUCATION ═══════════ -->
+  <section id="education">
+    <div class="section-header reveal">
+      <p class="section-label" data-i18n="lbl-edu">Parcours scolaire</p>
+      <h2 class="section-title" data-i18n="ttl-edu">Ma <span>formation</span></h2>
+      <div class="sep"></div>
+    </div>
+
+    <div class="edu-list">
+
+      <!-- BTS SIO SLAM -->
+      <div class="edu-card reveal">
+        <div class="edu-icon">🎓</div>
+        <div class="edu-body">
+          <div class="edu-top">
+            <div>
+              <h3 data-i18n="edu-name">BTS Services Informatiques aux Organisations</h3>
+              <p data-i18n="edu-spec">Option SLAM – Solutions Logicielles et Applications Métiers</p>
+            </div>
+            <span class="badge-period" data-i18n="edu-dates">2024 – 2026</span>
+          </div>
+          <p class="edu-note" data-i18n="edu-status">Actuellement en 2ème et dernière année</p>
+          <div class="edu-tags">
+            <span data-i18n="m1">Développement d'applications</span>
+            <span data-i18n="m2">Gestion de projet</span>
+            <span data-i18n="m3">Bases de données</span>
+            <span data-i18n="m4">Réseaux</span>
+            <span data-i18n="m5">Cybersécurité</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bac Pro -->
+      <div class="edu-card reveal">
+        <div class="edu-icon">📡</div>
+        <div class="edu-body">
+          <div class="edu-top">
+            <div>
+              <h3 data-i18n="bac-name">Baccalauréat Professionnel Système Numérique</h3>
+              <p data-i18n="bac-spec">Option C – RISC (Réseaux Informatiques et Systèmes Communicants)</p>
+            </div>
+            <span class="badge-period" data-i18n="bac-dates">2021 – 2024</span>
+          </div>
+          <p class="edu-note" data-i18n="bac-status">Obtenu en 2024</p>
+          <div class="edu-tags">
+            <span data-i18n="b1">Installation &amp; configuration de réseaux</span>
+            <span data-i18n="b2">Maintenance réseaux</span>
+            <span data-i18n="b3">Câblage réseau</span>
+            <span data-i18n="b4">Supervision</span>
+            <span data-i18n="b5">Documentation technique</span>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ═══════════ FOOTER ═══════════ -->
+  <footer>
+    <p data-i18n="footer">Conçu &amp; développé par <span>Aurélien ROYANT</span> &middot; BTS SIO SLAM</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -255,10 +255,12 @@ navLinks.querySelectorAll('a').forEach(a => {
 ═══════════════════════════════════════════ */
 document.querySelectorAll('.project-card[data-github]').forEach(card => {
   card.addEventListener('click', () => {
-    const url = card.dataset.github.trim();
-    // Only navigate if the URL has been replaced (not a placeholder)
-    if (url && !url.startsWith('REMPLACEZ')) {
-      window.open(url, '_blank', 'noopener noreferrer');
+    let url = card.dataset.github.trim();
+    if (!url || url.startsWith('REMPLACEZ')) return;
+    // Ajoute https:// si absent
+    if (!url.startsWith('http://') && !url.startsWith('https://')) {
+      url = 'https://' + url;
     }
+    window.open(url, '_blank', 'noopener noreferrer');
   });
 });

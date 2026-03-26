@@ -779,6 +779,8 @@ footer {
   font-size: .85rem;
 }
 footer span { color: var(--purple-xl); font-weight: 600; }
+footer a { color: var(--purple-xl); text-decoration: none; }
+footer a:hover { text-decoration: underline; }
 
 
 /* ═══════════════════════════════════════════
